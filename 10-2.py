@@ -6,6 +6,7 @@ with open(file) as f:
     for line in f:
         if line.startswith("From "):
             hours.append(int(line.split(' ')[6][:2]))
+hours.sort()
 hours_set = set(hours)
 result = []
 for h in hours_set:
