@@ -9,9 +9,9 @@ with open(file) as f:
             num = float(line[start : ])
             nums.append(num)
     
-sum = 0
+s = 0
 for n in nums:
-    sum += n
-result = sum/len(nums)
+    s += n
+result = s/len(nums)
 
-print("Average spam confidence: ", result)
+print("Average spam confidence:", result)
